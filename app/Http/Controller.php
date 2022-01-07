@@ -18,7 +18,7 @@ class Controller extends Controller
         return redirect()->back();
     }
   
-    public function openPage()
+    public function showPage()
     {
         $page = Pages::where('slug',$slug)->first();        
         return view('site.showPage',compact('page'));
